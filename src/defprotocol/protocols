@@ -1,0 +1,24 @@
+(ns baotask.protocols
+  (:require [taoensso.timbre :as timbre]
+            [clojure.java.jdbc :as jdbc]
+            [honeysql.core :as sql]
+            [honeysql.format :as fmt]
+            [honeysql.helpers :as helper]
+            [baotask.service :as service]
+            [baotask.utils :as utils]))
+
+(defprotocol ToClojure
+  (to-clojure [x] "Convert hector types to Clojure data structures"))
+
+(extend-protocol ToClojure
+  RowsImpl
+  (to-clojure [s]
+    (map to-clojure (iterator-seq (.iterator s))))
+  RowImpl
+  (to-clojure [s]
+    {:key (.getKey s)
+     :columns (to-clojure (.getColumnSlice s))})
+  QueryResultImpl
+  (to-clojure [s]
+    (with-meta (to-clojure (.get s)) {:exec_us (.getExecutionTimeMicro s)
+                                      :host (.getHostUsed s)})))

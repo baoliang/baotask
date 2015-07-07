@@ -1,0 +1,22 @@
+{
+    "db": {
+        "db-name": "coinexc",
+        "user": "zhangbaoliang",
+        "password": "wwwsunboy",
+    },
+    "test": "test",
+    "redis": {"host": "127.0.0.1",
+        "port": 6379,},
+    "project-name": "baotask",
+    "mobilecoin": {"rpchost": "http://198.199.98.6",
+        "rpcport": 19883,
+        "rpcuser":"mobilecoinrpc",
+        "rpcpassword": "8ZQiVMYnRbfRVMBMQSJT88Wd8Sxh9McTfPC2fhFrvuth"},
+
+    "energycoin": {"rpchost": "http://198.199.98.6",
+        "rpcport": 27777,
+        "rpcuser":"energycoinrpc",
+        "rpcpassword": "4bpMKKTEtEGwa545YyukpESMbrumf8TYHEPzJEwXT5Sh"},
+    "siteurl" : "http://localhost:3000/",
+    "mail": {"from":"service@coinexc.com"},
+}

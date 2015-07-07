@@ -16,7 +16,7 @@
   <scm>
     <connection>scm:git:git://github.com//.git</connection>
     <developerConnection>scm:git:ssh://git@github.com//.git</developerConnection>
-    <tag>971dddeb39ea1a01255ca14f15c133c9f1a022b0
+    <tag>57af5e2c2eafd45901dcf1f85c6f391a76b01e9f
 </tag>
     <url>https://github.com//</url>
   </scm>
@@ -96,7 +96,7 @@
     <dependency>
       <groupId>clabango</groupId>
       <artifactId>clabango</artifactId>
-      <version>0.6-SNAPSHOT-dev</version>
+      <version>0.6-b1</version>
     </dependency>
     <dependency>
       <groupId>clj-btc</groupId>

@@ -11,7 +11,7 @@
      [commons-io/commons-io "2.4"]
      [commons-lang/commons-lang "2.6"]
      [com.draines/postal "1.11.1"]
-     [clabango "0.6-SNAPSHOT-dev"]
+     [clabango "0.6-b1"]
      [clj-btc "0.1.1"]
      [clj-time "0.6.0"]
      [compojure "1.1.8"]

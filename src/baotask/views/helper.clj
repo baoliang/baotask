@@ -206,3 +206,9 @@
     (str (subs string 0 len) "...")
     string))
 
+(defn list-contains? [coll value]
+  "判断列表是否有一项值"
+  (let [s (seq coll)]
+    (if s
+      (if (= (first s) value) true (recur (rest s) value))
+      false)))

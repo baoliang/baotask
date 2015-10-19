@@ -13,7 +13,7 @@
   query)
 
 (defn format-and-log [sqlmap]
-  (if (= "mysql" (get-in config ["db" "subprotocol"]))
+  (if (=  "mysql"  (get-in config ["db" "subprotocol"]))
     ;(log (clojure.string/replace  #"NULL" ""))
     (log (sql/format sqlmap))
     (log (sql/format sqlmap :quoting :ansi))))

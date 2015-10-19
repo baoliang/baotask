@@ -1,5 +1,5 @@
 (defproject baotask
-  "0.1.2-SNAPSHOT"
+  "0.1.4-SNAPSHOT"
   :description "Platam of Baoliang"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -19,7 +19,7 @@
      [com.taoensso/carmine "2.6.0"]
      [pawnshop "0.1.0-SNAPSHOT"]
      [com.jolbox/bonecp "0.8.0.RELEASE"]
-     [honeysql "0.5.3-SNAPSHOT"]
+     [honeysql "0.5.4-SNAPSHOT"]
      [ring-server "0.3.1"]
      [http-kit "2.1.16"]
      [org.clojure/data.json "0.2.4"]

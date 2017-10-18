@@ -5,7 +5,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies
-    [[org.clojure/clojure "1.6.0"]
+    [[org.clojure/clojure "1.8.0"]
      [enlive "1.1.4"]
      [commons-codec/commons-codec "1.9"]
      [commons-io/commons-io "2.4"]
@@ -46,6 +46,5 @@
      [org.clojure/core.typed "0.2.13"]
      [clojure-csv/clojure-csv "2.0.1"]]
   :plugins
-     [[speclj "2.5.0"]]
-  :resource-paths ["resources/jar/*"])
+     [[speclj "2.5.0"]])
 
